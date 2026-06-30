@@ -198,6 +198,9 @@ config zone 'docker'
   option forward 'ACCEPT'
   option name 'docker'
   list subnet '172.16.0.0/12'
+  list device 'docker0'
+  list device 'veth+'
+  list device 'br-+'
 
 config forwarding
   option src 'docker'
